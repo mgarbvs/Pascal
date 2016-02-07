@@ -18,9 +18,9 @@ while true;
   echo "┌──────[ pascal ]──[ version 0.1 ]─────── ─ ─"
   echo "│Usage: pascal -'option'"
   echo "├────────────────[ options ]"───────────── ─ ─
-  echo "│ -1, --one            get first tier"
-  echo "│ -2, --two            get the third item"
-  echo "│ -3, --three          get the third tier"
+  echo "│ -1, 1                    get first tier"
+  echo "│ -2, 2                    get the third tier"
+  echo "│ -3, 3                    get the third tier"
   echo "│             and so on."
   echo "│ -l, --limits         display the limitations"
   echo "│ -h, -h               display this screen"
@@ -28,48 +28,53 @@ while true;
     
   exit
 done;                 
-elif [[ $1 = '-1' || $1 = '--one' || $1 == "1" ]]; then
+elif [[ $1 = '-1' || $1 = '--1' || $1 == "1" ]]; then
   while true;
 
   do
-    echo "1"
+    echo " 1"
+    echo "1 1"
   
 exit
 done;
-  elif [[ $1 = '-2' || $1 = '--two' || $1 == "2" ]]; then
+  elif [[ $1 = '-2' || $1 = '--2' || $1 == "2" ]]; then
   while true;
 
   do
     echo "  1 "
+    echo " 1 1"
     echo "1 2 1 "
     exit
   done;
 
-  elif [[ $1 = '-3' || $1 = '--three' || $1 == "3" ]]; then
+  elif [[ $1 = '-3' || $1 = '--3' || $1 == "3" ]]; then
   while true;
 
   do
       echo "   1 "
+      echo "  1 1"
     echo " 1 2 1 "
   echo "1 3 3 1     "
   exit
   done;
-  elif [[ $1 = '-4' || $1 = '--1n' || $1 == "4" ]]; then
+  elif [[ $1 = '-4' || $1 = '--4' || $1 == "4" ]]; then
 while true;
 
   do
       echo "    1 "
+      echo "   1 1"
     echo "  1 2 1 "
   echo " 1 3 3 1     "
   echo "1 4 6 4 1     "
   exit
   done
 
-elif [[ $1 = '-5' || $1 = '-t' || $1 == "5" ]]; then
+elif [[ $1 = '-5' || $1 = '--5' || $1 == "5" ]]; then
  while true;
 
   do
       echo "     1 "
+      echo "    1 1"
     echo "   1 2 1 "
   echo "  1 3 3 1     "
   echo " 1 4 6 4 1     "
@@ -78,11 +83,12 @@ elif [[ $1 = '-5' || $1 = '-t' || $1 == "5" ]]; then
   done
 
 
-elif [[ $1 = '-6' || $1 = '-t' || $1 == "6" ]]; then
+elif [[ $1 = '-6' || $1 = '--6' || $1 == "6" ]]; then
  while true;
 
   do
       echo "      1 "
+      echo "     1 1"
     echo "    1 2 1 "
   echo "   1 3 3 1     "
   echo "  1 4 6 4 1     "
@@ -91,17 +97,35 @@ elif [[ $1 = '-6' || $1 = '-t' || $1 == "6" ]]; then
   exit
   done
 
-elif [[ $1 = '-7' || $1 = '-t' || $1 == "7" ]]; then
+elif [[ $1 = '-7' || $1 = '--7' || $1 == "7" ]]; then
  while true;
 
   do
       echo "       1 "
+      echo "      1 1"
     echo "     1 2 1 "
   echo "    1 3 3 1     "
   echo "   1 4 6 4 1     "
   echo "  1 5 10 5  1 "
   echo " 1 6 15 15 6 1 "
   echo "1 7 21 30 21 7 1 " 
+  exit
+  done;
+
+
+elif [[ $1 = '-8' || $1 = '--8' || $1 == "8" ]]; then
+ while true;
+
+  do
+      echo "        1 "
+      echo "       1 1"
+    echo "      1 2 1 "
+  echo "     1 3 3 1     "
+  echo "    1 4 6 4 1     "
+  echo "   1 5 10 5  1 "
+  echo "  1 6 15 15 6 1 "
+  echo " 1 7 21 30 21 7 1 " 
+  echo "1 8 28 56 70 65 28 8" 
   exit
   done;
 
